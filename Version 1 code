@@ -1,0 +1,115 @@
+#Comuplsory: List, dictionary, tuple
+
+import time
+
+screen_width = 150;
+
+### Difficulties w/ questions ###
+
+def play_difficulty_easy():
+  print("\n----- Easy -----")
+  option = input("\nChoose Your Question (1, 2, 3,  4, 5)")
+  if option == '1':
+ 
+  elif option == '2':
+
+  elif option == '3':
+
+  elif option == '4':
+
+  elif option == '5':
+
+def play_difficulty_medium():
+  print("\n===== Medium =====")
+  option = input("\nChoose Your Question (1, 2, 3, 4, 5)")
+  if option == '1':
+
+  elif option == '2':
+
+  elif option == '3':
+
+  elif option == '4':
+
+  elif option == '5':
+
+
+def play_difficulty_hard():
+  print("\n+++++ Hard +++++")
+  option = input("\nChoose Your Question (1, 2, 3, 4, 5)")
+  if option == '1':
+
+  elif option == '2':
+
+  elif option == '3':
+
+  elif option == '4':
+ 
+  elif option == '5':
+
+
+
+
+Difficulty = ('Easy', 'Medium', 'Hard', 'Instructions', 'Settings') 
+
+
+### Quiz ###
+def play_quiz():
+    flag = False
+    try:
+        choice = int(input("\nWelcome To The Quiz!\nChoose your difficulty:\n(1). Easy\n(2). Medium\n(3). Hard\n(4). Go Back\nEnter Your Choice [1,2,3,4]:\n "))
+        if choice < 1 or choice > 4:
+            print("Invalid Choice. Enter Again")
+            flag = True # raising flag
+    except ValueError as e:
+        print("Invalid Choice. Enter Again")
+        flag = True # raising a flag
+    if not flag: 
+      if choice == 1:
+        play_difficulty_easy()
+      elif choice == 2:
+       play_difficulty_medium()
+      elif choice == 3:
+        play_difficulty_hard()
+      elif choice == 4:
+        os.system('clear')
+        execute()
+    else:
+      play_quiz()  
+
+### Main Menu ###
+def user_begin_prompt():
+    print('##########################################\n')
+    print('< Welcome to the Global Citizen Quiz Game! >\n')
+    print('##########################################\n')
+    print("             ########\n             ========\n             ###/\###\n              ##/--\##\n             #/----\#\n             ========\n              ########\n\nA. Play\nB. Quit\n")
+    play = input()
+    if play.lower() == 'a' or play.lower() ==  'play':
+        play_quiz()
+    elif play.lower() == 'b' or play.lower() == 'quit':
+        print("\nHope you come back soon!")
+        choice = input("\n Type 'R' to restart the game.\n\n")
+        while(True):
+          if choice == 'r':
+           for i in range (1):
+              time.sleep(1)
+              os.system('clear')
+              execute()
+          else:
+            print("Invalid choice. Enter again\n")
+            choice = input("Type 'R' to restart the game.\n\n")
+        
+
+    else:
+        print("\nHmm. I didn't quite understand that.\nPress A to play or B to quit.\n")
+        time.sleep(5)
+        os.system('clear')
+        user_begin_prompt()
+        
+### starts the game ###
+def execute():
+    user_begin_prompt()
+
+if __name__ == '__main__':
+    execute()
+  
+
