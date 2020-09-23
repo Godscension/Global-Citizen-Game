@@ -1,8 +1,11 @@
 #Comuplsory: List, dictionary, tuple
 
 import time
+import audio
 
 screen_width = 150;
+
+audio.play(audio.mp3);
 
 ### Difficulties w/ questions ###
 
