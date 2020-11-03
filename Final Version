@@ -1,0 +1,539 @@
+import os
+import time
+
+screen_width = 300;
+
+### Difficulties w/ questions ###
+
+
+### Easy Questions ###
+def easy_question_1():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n- Q.1 \n\n How much plastic pollution finds\nits way into our oceans a day?\n\nA: 8 Million Pieces.\nB: 3 Million pieces.\nC: 11 Million Pieces.\n")
+  if option == 'a':
+    print("Correct... Next Question.")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_2()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_1()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_1()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_easy()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_1()
+
+def easy_question_2():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n- Q.2 \n\n If 4 people pick up 500 grams of\nplastic a day, how much plastic\nis picked up in a week?\n\nA: 3,500 grams.\nB: 14 KG.\nC: 15,000 grams. \n")
+  if option == 'b':
+    print("Correct... Next Question.")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_3()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_2()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_2()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_easy()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_2()
+
+def easy_question_3():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n- Q.3 \n\nWhat is the best action to reduce\n plastic pollution?\n\nA: Burning plastic.\nB: Stop using non recyclable plastics.\nC: Stockpiling plastic. \n")
+  if option == 'b':
+    print("Correct... Returning you to the question select menu.")
+    time.sleep(5)
+    os.system('clear')
+    play_difficulty_easy()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_3()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_3()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_easy()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    easy_question_3()
+
+
+### Medium QUestions ###
+def medium_question_1():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n= Q.1 \n\n How much plastic pollution  \nis created each year?\n\nA: 200 Million Tons.\nB: 90 Million Tons\nC: 300 Million Tons.\n")
+  if option == 'c':
+    print("Correct... Next question.")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_2()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_1()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_1()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_medium()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_1()
+
+def medium_question_2():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n= Q.2 \n\n How much of the marines\npollution is plastic?\n\nA: 60-90%\nB: 40-60%\nC: 10-40%\n")
+  if option == 'a':
+    print("Correct... Next question.")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_3()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_2()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_2()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_medium()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_2()
+
+def medium_question_3():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n= Q.3 \n\n How much of marine pollution\n comes from land?\n\nA: 92.5%\nB: 80%\nC: 67.5%\n")
+  if option == 'b':
+    print("Correct... Returning you to the question select menu.")
+    time.sleep(5)
+    os.system('clear')
+    play_difficulty_medium()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_3()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_3()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_medium()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    medium_question_3()
+
+
+### Hard Questions
+def hard_question_1():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n+ Q.1 \n\n How many pieces of micro\nand macro pieces of plastic\n are in our ocean?\n\nA: 5.5 Trillion.\nB: 6 Trillion.\nC: 5.25 Trillion.\n")
+  if option == 'c':
+    print("Correct... Next question.")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_2()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_1()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_1()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_hard()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_1()
+
+def hard_question_2():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n+ Q.2 \n\n How many marine mammals\nare killed each year\n from plastic pollution?\n\nA: 75 Million Marine Mammals.\nB: 50 million Marine Mammals.\nC: 100 Million Marine Mammals.\n")
+  if option == 'c':
+    print("Correct... Returning you to the question select menu.")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_3()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_2()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_2()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_hard()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_2()
+
+def hard_question_3():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n+ Q.3 \n\n What is the most polluted sea?\n\nA: Baltic Sea.\nB: Mediterranean Sea.\nC: Caribbean Sea.\n")
+  if option == 'a':
+    print("Correct... Returning you to the question select menu.\n Type 'secret' in the main menu.")
+    time.sleep(5)
+    os.system('clear')
+    play_difficulty_hard()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_3()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_3()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_hard()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    hard_question_3()
+
+
+### Secret Level Questions ###
+def secret_question_1():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n-+^+- Q.1 \n\n What marine animal does\n plastic pollution affect\n the most?\n\nA: Sea Turtles.\nB: Fish.\nC: Sea Birds.\n")
+  if option == 'b':
+    print("Correct... Next question.")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_2()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_1()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_1()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_secret()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_1()
+
+def secret_question_2():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n-+^+- Q.2 \n\n Which country produces the most\nplastic pollution?\n\nA: China.\nB: United States of America.\nC: Indonesia.\n")
+  if option == 'a':
+    print("Correct... Next question.")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_3()
+  elif option == 'b':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_2()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_2()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_secret()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_2()
+
+def secret_question_3():
+  os.system('clear')
+  print("Type in a, b or c to answer the questions or type 'back' to go back to \nthe question select menu.")
+  option = input("\n-+^+- Q.3 \n\n What natural forces carry plastic\n into the ocean?\n\nA: Machines.\nB: Rainwater and wind.\nC: The Sun.\n")
+  if option == 'b':
+    print("Correct... Returning you to the question select menu.")
+    time.sleep(5)
+    os.system('clear')
+    play_difficulty_secret()
+  elif option == 'a':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_3()
+  elif option == 'c':
+    print("Sorry incorrect answer try again...")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_3()
+  elif option == 'back':
+    time.sleep(1)
+    os.system('clear')
+    play_difficulty_secret()
+  else:
+    print("Sorry that is an invalid input...Try again.")
+    time.sleep(3)
+    os.system('clear')
+    secret_question_3()
+
+
+### Difficulties ###
+def play_difficulty_easy():
+  print("\n----- Easy -----")
+  option = input("\nChoose Your Question (1, 2, 3). \nType 'Back' to go to the previous screen.\n")
+  if option == '1':
+    print("\n Easy -Q.1-")
+    easy_question_1()
+  elif option == '2':
+    print("\n Easy -Q.2-")
+    easy_question_2()
+  elif option == '3':
+    print("\n Easy -Q.3-")
+    easy_question_3()
+  elif option == 'back':
+    os.system('clear')
+    play_quiz()
+  else:
+    print("Sorry I do not quite understand that, please enter a valid \ninput.")
+    time.sleep(4)
+    os.system('clear')
+    play_difficulty_easy()
+
+def play_difficulty_medium():
+  print("\n===== Medium =====")
+  option = input("\nChoose Your Question (1, 2, 3). \nType 'Back' to go to the previous screen.\n")
+  if option == '1':
+    print("\n Medium =Q.1=")
+    medium_question_1()
+  elif option == '2':
+    print("\n Medium =Q.2=")
+    medium_question_2()
+  elif option == '3':
+    print("\n Medium =Q.3=")
+    medium_question_3()
+  elif option == 'back':
+    os.system('clear')
+    play_quiz()
+  else:
+    print("Sorry I do not quite understand that, please enter a valid \ninput.")
+    time.sleep(4)
+    os.system('clear')
+    play_difficulty_medium()
+
+def play_difficulty_hard():
+  print("\n+++++ Hard +++++")
+  option = input("\nChoose Your Question (1, 2, 3). \nType 'Back' to go to the previous screen.\n")
+  if option == '1':
+    print("\n Hard +Q.1+")
+    hard_question_1()
+  elif option == '2':
+    print("\n Hard +Q.2+")
+    hard_question_2()
+  elif option == '3':
+    print("\n Hard +Q.3+")
+    hard_question_3()
+  elif option == 'back':
+    os.system('clear')
+    play_quiz()
+  else:
+    print("Sorry I do not quite understand that, please enter a valid \ninput.")
+    time.sleep(4)
+    os.system('clear')
+    play_difficulty_hard()
+
+def play_difficulty_secret():
+  print("-+^+- Secret Level -+^+-")
+  option = (input("\nChoose Your Question (1, 2, 3).\n Type 'Back' to go to the previous screen.\n"))
+  if option == '1':
+    print("\n Secret Level Q.1")
+    secret_question_1()
+  elif option == '2':
+    print("\n Secret Level Q.2")
+    secret_question_2()
+  elif option == '3':
+    print("\n Secret Level Q.3")
+    secret_question_3()
+  elif option == 'back':
+    os.system("clear")
+    execute()
+  else:
+    print("Sorry I do not quite understand that, please enter a valid\ninput.")
+    time.sleep(4)
+    os.system('clear')
+    play_difficulty_secret()
+
+
+### Quiz ###
+def play_quiz():
+    flag = False
+    try:
+        choice = int(input("\nWelcome To The Quiz!\nChoose your difficulty:\n(1). Easy\n(2). Medium\n(3). Hard\n(4). Go Back\nEnter Your Choice [1,2,3,4]:\n "))
+        if choice < 1 or choice > 4:
+            print("Invalid Choice. Enter Again")
+            flag = True # raising flag
+    except ValueError as e:
+        print("Invalid Choice. Enter Again")
+        flag = True # raising a flag
+    if not flag: 
+      if choice == 1:
+        play_difficulty_easy()
+      elif choice == 2:
+       play_difficulty_medium()
+      elif choice == 3:
+        play_difficulty_hard()
+      elif choice == 4:
+        os.system('clear')
+        execute()
+    else:
+      play_quiz()  
+
+
+### Main Menu ###
+def user_begin_prompt():
+    print('##########################################\n')
+    print('< Welcome to the Global Citizen Quiz Game! >\n')
+    print('##########################################\n')
+    print("             ########\n             ========\n             ###/\###\n              ##/--\##\n             #/----\#\n             ========\n              ########\n\nA. Play\nB. Quit\nC. How To Play\n")
+    play = input()
+    if play.lower() == 'a' or play.lower() ==  'play':
+        play_quiz()
+    elif play.lower() == 'b' or play.lower() == 'quit':
+        print("\nHope you come back soon!")
+        choice = input("\n Type 'R' to restart the game.\n Or type 'Y' to confirm quit.\n\n")
+        if choice == 'r':
+         for i in range (1):
+             time.sleep(1)
+             os.system('clear')
+             execute()
+        elif choice == 'y':
+          os.system('clear')
+          time.sleep(1)
+          for i in range(5):
+           print("Exiting")
+           time.sleep(0.25)
+           os.system('clear')
+           print("Exiting.")
+           time.sleep(0.25)
+           os.system('clear')
+           print("Exiting..")
+           time.sleep(0.25)
+           os.system('clear')
+           print("Exiting...")
+           time.sleep(0.3)
+           os.system('clear') 
+          print("Goodbye")
+          time.sleep(1)
+          os.system('clear')
+          SystemExit
+        else:
+          print("Invalid choice. Enter again\n")
+          choice = input("Type 'R' to restart the game.\n\n")
+        
+    elif play.lower() == 'c' or play.lower() == 'how to play':
+      os.system('clear')
+      print("\nTo choose your option type in the corresponding letter or number to the \nanswer you have chosen for the question or menu.\n")
+      time.sleep(10)
+      os.system('clear')
+      execute()
+    elif play.lower() == 'secret':
+      play_difficulty_secret()
+    else:
+        print("\nHmm. I didn't quite understand that.\nPress A to play, B to quit or C for how to play the game.\n")
+        time.sleep(5)
+        os.system('clear')
+        user_begin_prompt()
+        
+
+### starts the game ###
+def execute():
+    user_begin_prompt()
+
+if __name__ == '__main__':
+    execute()
+  
+
